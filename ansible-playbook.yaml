@@ -32,7 +32,7 @@
           iprange: 172.19.1.0/26
     - name: copy the site directory in place
       copy:
-        src: /root/ansible_projects/nginx.conf
+        src: nginx.conf
         dest: /tmp/data/nginx.conf
     - name: Install httpd container
       docker_container:
